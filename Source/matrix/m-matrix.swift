@@ -8,6 +8,7 @@
 
 import Foundation
 import Accelerate
+
 struct matrix {
     let n: Int
     var rows: Int
@@ -66,7 +67,7 @@ struct matrix {
     func dot(x: ndarray) -> ndarray{
         var y = zeros((x.n, 1))
         y.flat = x
-        var z = self.dot(y)
+        let z = self.dot(y)
         return z.flat
     }
     func min(axis:Int = -1) -> Double{
@@ -114,6 +115,7 @@ struct matrix {
             self[idx, k] = newValue
         }
     }
+    /*
     subscript(r: Range<Int>, c: Range<Int>) -> matrix {
         // x[0..<2, 0..<2]
         get {
@@ -127,6 +129,7 @@ struct matrix {
             self[rr, cc] = newValue
         }
     }
+    */
     subscript(i: Int, k: Range<Int>) -> ndarray {
         // x[0, 0..<2]
         get {
@@ -138,6 +141,7 @@ struct matrix {
             self[i, idx] = newValue
         }
     }
+    /*
     subscript(or: ndarray, oc: ndarray) -> matrix {
         // the main method.
         // x[array(1,2), array(3,4)]
@@ -146,7 +150,7 @@ struct matrix {
             var c = oc.copy()
             if r.max() < 0.0 {r += 1.0 * rows.double}
             if c.max() < 0.0 {c += 1.0 * columns.double}
-            
+          
             let (j, i) = meshgrid(r, y: c)
             let idx = (j.flat*columns.double + i.flat)
             let z = flat[idx]
@@ -165,6 +169,7 @@ struct matrix {
             }
         }
     }
+    */
     subscript(r: ndarray) -> ndarray {
         // flat indexing
         get {return self.flat[r]}

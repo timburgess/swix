@@ -9,11 +9,12 @@
 import Foundation
 
 // NORMs
+/*
 func norm(x:matrix, ord:String="assumed to be 'fro' for Frobenius")->Double{
     if ord == "fro" {return norm(x.flat, ord:2)}
     assert(false, "Norm type assumed to be \"fro\" for Forbenius norm!")
     return -1
-}
+}*/
 func norm(x:matrix, ord:Double=2)->Double{
     if      ord ==  inf {return max(sum(abs(x), axis:1))}
     else if ord == -inf {return min(sum(abs(x), axis:1))}

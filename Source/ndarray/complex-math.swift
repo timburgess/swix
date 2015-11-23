@@ -27,11 +27,12 @@ func inner(x:ndarray, y:ndarray)->Double{
     // the inner product. aka dot product, but I use dot product as a short for matrix multiplication
     return sum(x * y)
 }
+/*
 func outer(x:ndarray, y:ndarray)->matrix{
     // the outer product.
     let (xm, ym) = meshgrid(x, y: y)
     return xm * ym
-}
+}*/
 // fourier transforms
 func fft(x: ndarray) -> (ndarray, ndarray){
     let N:CInt = x.n.cint

@@ -45,10 +45,10 @@ func pow(x: matrix, power: Double) -> matrix{
     var z = zeros_like(x)
     z.flat = y
     return z
-}*/
+}
 func sqrt(x: matrix) -> matrix{
     return apply_function(sqrt, x: x)
-}
+}*/
 
 // ROUND
 func floor(x: matrix) -> matrix{

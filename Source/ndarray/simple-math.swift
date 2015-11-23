@@ -190,9 +190,10 @@ func pow(x:Double, y:ndarray)->ndarray{
     let xx = ones(y.n) * x
     return pow(xx, y: y)
 }
+/*
 func sqrt(x: ndarray) -> ndarray{
     return x^0.5
-}
+}*/
 func exp(x:ndarray)->ndarray{
     return apply_function("exp", x: x)
 }
