@@ -34,16 +34,18 @@ func norm(x:matrix, ord:Double=2)->Double{
     return -1
 }
 
+/*
 func det(x:matrix)->Double{
     var result:CDouble = 0.0
     CVWrapper.det(!x, n:x.shape.0.cint, m:x.shape.1.cint, result:&result)
     return result
-}
+}*/
 
 // basics
 func argwhere(idx: matrix) -> ndarray{
     return argwhere(idx.flat)
 }
+/*
 func flipud(x:matrix)->matrix{
     let y = x.copy()
     CVWrapper.flip(!x, into:!y, how:"ud", m:x.shape.0.cint, n:x.shape.1.cint)
@@ -63,7 +65,7 @@ func rot90(x:matrix, k:Int=1)->matrix{
     assert(false, "k is assumed to satisfy 1 <= k <= 3")
     return y
 }
-
+*/
 // modifying matrices, modifying equations
 func transpose (x: matrix) -> matrix{
     let m = x.shape.1

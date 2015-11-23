@@ -9,6 +9,7 @@
 import Foundation
 
 // NORM
+/*
 func norm(x: ndarray, ord:Double=2) -> Double{
     // takes the norm of an array
     if ord==2      { return sqrt(sum(pow(x, power: 2)))}
@@ -20,7 +21,8 @@ func norm(x: ndarray, ord:Double=2) -> Double{
     else if ord.double ==  inf {return max(abs(x))}
     else if ord.double == -inf {return min(abs(x))}
     assert(false, "type of norm unrecongnized")
-    return -1.0}
+    return -1.0
+}*/
 func count_nonzero(x:ndarray)->Double{
     return sum(abs(x) > S2_THRESHOLD)
 }
@@ -46,6 +48,7 @@ func delete(x:ndarray, idx:ndarray) -> ndarray{
     let y = x[argwhere(i)]
     return y
 }
+/*
 func `repeat`(x: ndarray, N:Int, axis:Int=0) -> ndarray{
     // repeat the array element wise or as a whole array
     var y = zeros((N, x.n))
@@ -56,7 +59,7 @@ func `repeat`(x: ndarray, N:Int, axis:Int=0) -> ndarray{
     if axis==0{}
     else if axis==1 { y = y.T}
     return y.flat
-}
+}*/
 
 // SORTING and the like
 func sort(x:ndarray)->ndarray{
@@ -77,20 +80,24 @@ func unique(x:ndarray)->ndarray{
         return un
     }
 }
+/*
 func shuffle(x:ndarray)->ndarray{
     // randomly shuffle the array
     let y = x.copy()
     CVWrapper.shuffle(!y, n:y.n.cint)
     return y
-}
+}*/
 
 // SETS
+/*
 func intersection(x: ndarray, y:ndarray)->ndarray{
     return unique(x[argwhere(in1d(x, y: y))])
 }
+*/
 func union(x:ndarray, y:ndarray)->ndarray{
     return unique(concat(x, y: y))
 }
+/*
 func in1d(x: ndarray, y:ndarray)->ndarray{
     if (x.n > 0 && y.n > 0){
         let (xx, yy) = meshgrid(x, y: y)
@@ -99,7 +106,7 @@ func in1d(x: ndarray, y:ndarray)->ndarray{
         return 0+j
     }
     return array()
-}
+}*/
 func concat(x:ndarray, y:ndarray)->ndarray{
     // concatenate two matrices
     var z = zeros(x.n + y.n)
@@ -109,6 +116,7 @@ func concat(x:ndarray, y:ndarray)->ndarray{
 }
 
 // ARG
+/*
 func argmax(x:ndarray)->Int{
     // find the location of the max
     var m:CInt = 0
@@ -133,6 +141,7 @@ func argsort(x:ndarray)->ndarray{
     vDSP_vflt32D(&y, 1.stride, !z, 1.stride, x.n.length)
     return z
 }
+*/
 func argwhere(idx: ndarray) -> ndarray{
     // counts non-zero elements, return array of doubles (which can be indexed!).
     let i = arange(idx.n)

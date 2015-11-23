@@ -8,6 +8,8 @@
 
 import Foundation
 
+// no support for SVN due to OpenCV dependencies
+
 class SVM {
     // swift --> objc --> objc++ --> c++
     var cvsvm:cvSVM;

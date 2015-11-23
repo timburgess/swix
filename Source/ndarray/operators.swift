@@ -29,7 +29,9 @@ func make_operator(lhs:ndarray, operation:String, rhs:ndarray) -> ndarray{
     }
     else if operation=="<" || operation==">" || operation==">=" || operation=="<=" {
         result = zeros(lhs.n)
-        CVWrapper.compare(!lhs, with: !rhs, using: operation.nsstring as String, into: !result, ofLength: lhs.n.cint)
+        print("ERROR: Unable to use CVWrapper")
+        //CVWrapper.compare(!lhs, with: !rhs, using: operation.nsstring as String, into: !result, ofLength: lhs.n.cint)
+      
         // since opencv uses images which use 8-bit values
         result /= 255
     }
@@ -61,7 +63,8 @@ func make_operator(lhs:ndarray, operation:String, rhs:Double) -> ndarray{
     else if operation=="-"
         {array = make_operator(lhs, operation: "-", rhs: ones(lhs.n)*rhs)}
     else if operation=="<" || operation==">" || operation=="<=" || operation==">="{
-        CVWrapper.compare(!lhs, withDouble:rhs.cdouble, using:operation.nsstring as String, into:!array, ofLength:lhs.n.cint)
+        print("ERROR: Unable to use CVWRapper")
+        //CVWrapper.compare(!lhs, withDouble:rhs.cdouble, using:operation.nsstring as String, into:!array, ofLength:lhs.n.cint)
         array /= 255
     }
     else {assert(false, "operation not recongnized! Error with the speedup?")}
@@ -132,12 +135,14 @@ func % (lhs: Double, rhs: ndarray) -> ndarray{
     return make_operator(lhs, operation: "%", rhs: rhs)}
 // POW
 infix operator ^ {associativity none precedence 140}
+/*
 func ^ (lhs: ndarray, rhs: Double) -> ndarray{
     return pow(lhs, power: rhs)}
 func ^ (lhs: ndarray, rhs: ndarray) -> ndarray{
     return pow(lhs, y: rhs)}
 func ^ (lhs: Double, rhs: ndarray) -> ndarray{
     return pow(lhs, y: rhs)}
+*/
 // PLUS
 infix operator + {associativity none precedence 140}
 func + (lhs: ndarray, rhs: ndarray) -> ndarray{

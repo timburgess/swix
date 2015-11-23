@@ -39,12 +39,13 @@ func sign(x: matrix) -> matrix{
 }
 
 // POWER FUNCTION
+/*
 func pow(x: matrix, power: Double) -> matrix{
     let y = pow(x.flat, power: power)
     var z = zeros_like(x)
     z.flat = y
     return z
-}
+}*/
 func sqrt(x: matrix) -> matrix{
     return apply_function(sqrt, x: x)
 }

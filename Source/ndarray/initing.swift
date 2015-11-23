@@ -108,11 +108,12 @@ func rand(N: Int, distro:String="uniform") -> ndarray{
 func randn(N: Int, mean: Double=0, sigma: Double=1) -> ndarray{
     return (rand(N, distro:"normal") * sigma) + mean;
 }
+/*
 func randperm(N:Int)->ndarray{
     let x = arange(N)
     let y = shuffle(x)
     return y
-}
+}*/
 
 
 

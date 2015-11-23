@@ -11,7 +11,6 @@
 		22B97D411C027EB60097FDD6 /* Swix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B97D361C027EB60097FDD6 /* Swix.framework */; };
 		22B97D461C027EB60097FDD6 /* SwixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B97D451C027EB60097FDD6 /* SwixTests.swift */; };
 		22D6C7A01C028EF1007101E2 /* io.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7831C028EF1007101E2 /* io.swift */; };
-		22D6C7A11C028EF1007101E2 /* machine_learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7851C028EF1007101E2 /* machine_learning.swift */; };
 		22D6C7A21C028EF1007101E2 /* m-complex-math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7871C028EF1007101E2 /* m-complex-math.swift */; };
 		22D6C7A31C028EF1007101E2 /* m-helper-functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7881C028EF1007101E2 /* m-helper-functions.swift */; };
 		22D6C7A41C028EF1007101E2 /* m-image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7891C028EF1007101E2 /* m-image.swift */; };
@@ -55,7 +54,6 @@
 		22B97D451C027EB60097FDD6 /* SwixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwixTests.swift; sourceTree = "<group>"; };
 		22B97D471C027EB60097FDD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22D6C7831C028EF1007101E2 /* io.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = io.swift; sourceTree = "<group>"; };
-		22D6C7851C028EF1007101E2 /* machine_learning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = machine_learning.swift; sourceTree = "<group>"; };
 		22D6C7871C028EF1007101E2 /* m-complex-math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-complex-math.swift"; sourceTree = "<group>"; };
 		22D6C7881C028EF1007101E2 /* m-helper-functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-helper-functions.swift"; sourceTree = "<group>"; };
 		22D6C7891C028EF1007101E2 /* m-image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-image.swift"; sourceTree = "<group>"; };
@@ -125,7 +123,6 @@
 			children = (
 				22B97D391C027EB60097FDD6 /* Swix.h */,
 				22D6C7831C028EF1007101E2 /* io.swift */,
-				22D6C7841C028EF1007101E2 /* machine_learning */,
 				22D6C7861C028EF1007101E2 /* matrix */,
 				22D6C78E1C028EF1007101E2 /* ndarray */,
 				22D6C7951C028EF1007101E2 /* numbers.swift */,
@@ -142,14 +139,6 @@
 				22B97D471C027EB60097FDD6 /* Info.plist */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		22D6C7841C028EF1007101E2 /* machine_learning */ = {
-			isa = PBXGroup;
-			children = (
-				22D6C7851C028EF1007101E2 /* machine_learning.swift */,
-			);
-			path = machine_learning;
 			sourceTree = "<group>";
 		};
 		22D6C7861C028EF1007101E2 /* matrix */ = {
@@ -315,7 +304,6 @@
 				22D6C7B21C028EF1007101E2 /* math.m in Sources */,
 				22D6C7AB1C028EF1007101E2 /* initing.swift in Sources */,
 				22D6C7A01C028EF1007101E2 /* io.swift in Sources */,
-				22D6C7A11C028EF1007101E2 /* machine_learning.swift in Sources */,
 				22D6C7A61C028EF1007101E2 /* m-matrix.swift in Sources */,
 				22D6C7B41C028EF1007101E2 /* opencv.mm in Sources */,
 				22D6C7B61C028EF1007101E2 /* operations-and-indexing.m in Sources */,

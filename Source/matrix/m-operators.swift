@@ -69,8 +69,10 @@ func <- (inout lhs:matrix, rhs:Double){
 
 // SOLVE
 infix operator !/ {associativity none precedence 140}
+/*
 func !/ (lhs: matrix, rhs: ndarray) -> ndarray{
     return solve(lhs, b: rhs)}
+*/
 // EQUALITY
 func ~== (lhs: matrix, rhs: matrix) -> Bool{
     return (rhs.flat ~== lhs.flat)}

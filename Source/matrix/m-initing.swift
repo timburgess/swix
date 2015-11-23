@@ -46,12 +46,13 @@ func rand(N: (Int, Int)) -> matrix{
 func reshape(x: ndarray, shape:(Int, Int))->matrix{
     return x.reshape(shape)
 }
+/*
 func meshgrid(x: ndarray, y:ndarray) -> (matrix, matrix){
     assert(x.n > 0 && y.n > 0, "If these matrices are empty meshgrid fails")
     let z1 = reshape(`repeat`(y, N: x.n), shape: (x.n, y.n))
     let z2 = reshape(`repeat`(x, N: y.n, axis: 1), shape: (x.n, y.n))
     return (z2, z1)
-}
+}*/
 
 
 /// array("1 2 3; 4 5 6; 7 8 9") works like matlab. note that string format has to be followed to the dot. String parsing has bugs; I'd use arange(9).reshape((3,3)) or something similar

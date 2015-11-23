@@ -116,12 +116,16 @@ func mean(x: ndarray) -> Double{
     // finds the mean
     return x.mean()
 }
+/* TODO - requires implementation of pow without CVWrapper
 func std(x: ndarray) -> Double{
     // standard deviation
     return sqrt(variance(x))}
+
 func variance(x: ndarray) -> Double{
     // the varianace
-    return sum(pow(x - mean(x), power: 2) / x.count.double)}
+    return sum(pow(x - mean(x), power: 2) / x.count.double)
+}
+*/
 
 // BASIC INFO
 func sign(x: ndarray)->ndarray{
@@ -167,12 +171,13 @@ func cumprod(x:ndarray)->ndarray{
 
 
 // POWER FUNCTIONS
+/*
 func pow(x:ndarray, power:Double)->ndarray{
     // take the power. also callable with ^
     let y = zeros_like(x)
     CVWrapper.pow(!x, n:x.n.cint, power:power, into:!y)
     return y
-}
+}*/
 func pow(x:ndarray, y:ndarray)->ndarray{
     // take the power. also callable with ^
     let z = zeros_like(x)

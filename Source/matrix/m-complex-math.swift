@@ -72,6 +72,7 @@ func inv(x: matrix) -> matrix{
     dgetri_(&nc, !y, &nc, &ipiv, &work, &lwork, &info)
     return y
 }
+/*
 func solve(A: matrix, b: ndarray) -> ndarray{
     let (m, n) = A.shape
     assert(b.n == m, "Ax = b, A.rows == b.n. Sizes must match which makes sense mathematically")
@@ -79,7 +80,7 @@ func solve(A: matrix, b: ndarray) -> ndarray{
     let x = zeros(n)
     CVWrapper.solve(!A, b:!b, x:!x, m:m.cint, n:n.cint)
     return x
-}
+}*/
 func eig(x: matrix)->ndarray{
     // matrix, value, vectors
     let (m, n) = x.shape
