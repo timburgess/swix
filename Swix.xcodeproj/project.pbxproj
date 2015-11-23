@@ -10,6 +10,31 @@
 		22B97D3A1C027EB60097FDD6 /* Swix.h in Headers */ = {isa = PBXBuildFile; fileRef = 22B97D391C027EB60097FDD6 /* Swix.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22B97D411C027EB60097FDD6 /* Swix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B97D361C027EB60097FDD6 /* Swix.framework */; };
 		22B97D461C027EB60097FDD6 /* SwixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B97D451C027EB60097FDD6 /* SwixTests.swift */; };
+		22D6C7A01C028EF1007101E2 /* io.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7831C028EF1007101E2 /* io.swift */; };
+		22D6C7A11C028EF1007101E2 /* machine_learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7851C028EF1007101E2 /* machine_learning.swift */; };
+		22D6C7A21C028EF1007101E2 /* m-complex-math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7871C028EF1007101E2 /* m-complex-math.swift */; };
+		22D6C7A31C028EF1007101E2 /* m-helper-functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7881C028EF1007101E2 /* m-helper-functions.swift */; };
+		22D6C7A41C028EF1007101E2 /* m-image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7891C028EF1007101E2 /* m-image.swift */; };
+		22D6C7A51C028EF1007101E2 /* m-initing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C78A1C028EF1007101E2 /* m-initing.swift */; };
+		22D6C7A61C028EF1007101E2 /* m-matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C78B1C028EF1007101E2 /* m-matrix.swift */; };
+		22D6C7A71C028EF1007101E2 /* m-operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C78C1C028EF1007101E2 /* m-operators.swift */; };
+		22D6C7A81C028EF1007101E2 /* m-simple-math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C78D1C028EF1007101E2 /* m-simple-math.swift */; };
+		22D6C7A91C028EF1007101E2 /* complex-math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C78F1C028EF1007101E2 /* complex-math.swift */; };
+		22D6C7AA1C028EF1007101E2 /* helper-functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7901C028EF1007101E2 /* helper-functions.swift */; };
+		22D6C7AB1C028EF1007101E2 /* initing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7911C028EF1007101E2 /* initing.swift */; };
+		22D6C7AC1C028EF1007101E2 /* ndarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7921C028EF1007101E2 /* ndarray.swift */; };
+		22D6C7AD1C028EF1007101E2 /* operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7931C028EF1007101E2 /* operators.swift */; };
+		22D6C7AE1C028EF1007101E2 /* simple-math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7941C028EF1007101E2 /* simple-math.swift */; };
+		22D6C7AF1C028EF1007101E2 /* numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7951C028EF1007101E2 /* numbers.swift */; };
+		22D6C7B01C028EF1007101E2 /* conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7971C028EF1007101E2 /* conversion.swift */; };
+		22D6C7B11C028EF1007101E2 /* machine_learning.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7981C028EF1007101E2 /* machine_learning.mm */; };
+		22D6C7B21C028EF1007101E2 /* math.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C7991C028EF1007101E2 /* math.m */; };
+		22D6C7B31C028EF1007101E2 /* OpenCV.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D6C79A1C028EF1007101E2 /* OpenCV.h */; };
+		22D6C7B41C028EF1007101E2 /* opencv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C79B1C028EF1007101E2 /* opencv.mm */; };
+		22D6C7B51C028EF1007101E2 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D6C79C1C028EF1007101E2 /* opencv2.framework */; };
+		22D6C7B61C028EF1007101E2 /* operations-and-indexing.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C79D1C028EF1007101E2 /* operations-and-indexing.m */; };
+		22D6C7B71C028EF1007101E2 /* swix-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D6C79E1C028EF1007101E2 /* swix-Bridging-Header.h */; };
+		22D6C7B81C028EF1007101E2 /* ScalarArithmetic-bleed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D6C79F1C028EF1007101E2 /* ScalarArithmetic-bleed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +54,31 @@
 		22B97D401C027EB60097FDD6 /* SwixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B97D451C027EB60097FDD6 /* SwixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwixTests.swift; sourceTree = "<group>"; };
 		22B97D471C027EB60097FDD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D6C7831C028EF1007101E2 /* io.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = io.swift; sourceTree = "<group>"; };
+		22D6C7851C028EF1007101E2 /* machine_learning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = machine_learning.swift; sourceTree = "<group>"; };
+		22D6C7871C028EF1007101E2 /* m-complex-math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-complex-math.swift"; sourceTree = "<group>"; };
+		22D6C7881C028EF1007101E2 /* m-helper-functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-helper-functions.swift"; sourceTree = "<group>"; };
+		22D6C7891C028EF1007101E2 /* m-image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-image.swift"; sourceTree = "<group>"; };
+		22D6C78A1C028EF1007101E2 /* m-initing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-initing.swift"; sourceTree = "<group>"; };
+		22D6C78B1C028EF1007101E2 /* m-matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-matrix.swift"; sourceTree = "<group>"; };
+		22D6C78C1C028EF1007101E2 /* m-operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-operators.swift"; sourceTree = "<group>"; };
+		22D6C78D1C028EF1007101E2 /* m-simple-math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "m-simple-math.swift"; sourceTree = "<group>"; };
+		22D6C78F1C028EF1007101E2 /* complex-math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "complex-math.swift"; sourceTree = "<group>"; };
+		22D6C7901C028EF1007101E2 /* helper-functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "helper-functions.swift"; sourceTree = "<group>"; };
+		22D6C7911C028EF1007101E2 /* initing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = initing.swift; sourceTree = "<group>"; };
+		22D6C7921C028EF1007101E2 /* ndarray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ndarray.swift; sourceTree = "<group>"; };
+		22D6C7931C028EF1007101E2 /* operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = operators.swift; sourceTree = "<group>"; };
+		22D6C7941C028EF1007101E2 /* simple-math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "simple-math.swift"; sourceTree = "<group>"; };
+		22D6C7951C028EF1007101E2 /* numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = numbers.swift; sourceTree = "<group>"; };
+		22D6C7971C028EF1007101E2 /* conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = conversion.swift; sourceTree = "<group>"; };
+		22D6C7981C028EF1007101E2 /* machine_learning.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = machine_learning.mm; sourceTree = "<group>"; };
+		22D6C7991C028EF1007101E2 /* math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = math.m; sourceTree = "<group>"; };
+		22D6C79A1C028EF1007101E2 /* OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCV.h; sourceTree = "<group>"; };
+		22D6C79B1C028EF1007101E2 /* opencv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = opencv.mm; sourceTree = "<group>"; };
+		22D6C79C1C028EF1007101E2 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		22D6C79D1C028EF1007101E2 /* operations-and-indexing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "operations-and-indexing.m"; sourceTree = "<group>"; };
+		22D6C79E1C028EF1007101E2 /* swix-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "swix-Bridging-Header.h"; sourceTree = "<group>"; };
+		22D6C79F1C028EF1007101E2 /* ScalarArithmetic-bleed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScalarArithmetic-bleed.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D6C7B51C028EF1007101E2 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +124,13 @@
 			isa = PBXGroup;
 			children = (
 				22B97D391C027EB60097FDD6 /* Swix.h */,
+				22D6C7831C028EF1007101E2 /* io.swift */,
+				22D6C7841C028EF1007101E2 /* machine_learning */,
+				22D6C7861C028EF1007101E2 /* matrix */,
+				22D6C78E1C028EF1007101E2 /* ndarray */,
+				22D6C7951C028EF1007101E2 /* numbers.swift */,
+				22D6C7961C028EF1007101E2 /* objc */,
+				22D6C79F1C028EF1007101E2 /* ScalarArithmetic-bleed.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -86,6 +144,56 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		22D6C7841C028EF1007101E2 /* machine_learning */ = {
+			isa = PBXGroup;
+			children = (
+				22D6C7851C028EF1007101E2 /* machine_learning.swift */,
+			);
+			path = machine_learning;
+			sourceTree = "<group>";
+		};
+		22D6C7861C028EF1007101E2 /* matrix */ = {
+			isa = PBXGroup;
+			children = (
+				22D6C7871C028EF1007101E2 /* m-complex-math.swift */,
+				22D6C7881C028EF1007101E2 /* m-helper-functions.swift */,
+				22D6C7891C028EF1007101E2 /* m-image.swift */,
+				22D6C78A1C028EF1007101E2 /* m-initing.swift */,
+				22D6C78B1C028EF1007101E2 /* m-matrix.swift */,
+				22D6C78C1C028EF1007101E2 /* m-operators.swift */,
+				22D6C78D1C028EF1007101E2 /* m-simple-math.swift */,
+			);
+			path = matrix;
+			sourceTree = "<group>";
+		};
+		22D6C78E1C028EF1007101E2 /* ndarray */ = {
+			isa = PBXGroup;
+			children = (
+				22D6C78F1C028EF1007101E2 /* complex-math.swift */,
+				22D6C7901C028EF1007101E2 /* helper-functions.swift */,
+				22D6C7911C028EF1007101E2 /* initing.swift */,
+				22D6C7921C028EF1007101E2 /* ndarray.swift */,
+				22D6C7931C028EF1007101E2 /* operators.swift */,
+				22D6C7941C028EF1007101E2 /* simple-math.swift */,
+			);
+			path = ndarray;
+			sourceTree = "<group>";
+		};
+		22D6C7961C028EF1007101E2 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				22D6C7971C028EF1007101E2 /* conversion.swift */,
+				22D6C7981C028EF1007101E2 /* machine_learning.mm */,
+				22D6C7991C028EF1007101E2 /* math.m */,
+				22D6C79A1C028EF1007101E2 /* OpenCV.h */,
+				22D6C79B1C028EF1007101E2 /* opencv.mm */,
+				22D6C79C1C028EF1007101E2 /* opencv2.framework */,
+				22D6C79D1C028EF1007101E2 /* operations-and-indexing.m */,
+				22D6C79E1C028EF1007101E2 /* swix-Bridging-Header.h */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -94,6 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				22B97D3A1C027EB60097FDD6 /* Swix.h in Headers */,
+				22D6C7B31C028EF1007101E2 /* OpenCV.h in Headers */,
+				22D6C7B71C028EF1007101E2 /* swix-Bridging-Header.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +304,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D6C7AC1C028EF1007101E2 /* ndarray.swift in Sources */,
+				22D6C7AD1C028EF1007101E2 /* operators.swift in Sources */,
+				22D6C7B81C028EF1007101E2 /* ScalarArithmetic-bleed.swift in Sources */,
+				22D6C7A91C028EF1007101E2 /* complex-math.swift in Sources */,
+				22D6C7A21C028EF1007101E2 /* m-complex-math.swift in Sources */,
+				22D6C7AF1C028EF1007101E2 /* numbers.swift in Sources */,
+				22D6C7B11C028EF1007101E2 /* machine_learning.mm in Sources */,
+				22D6C7AE1C028EF1007101E2 /* simple-math.swift in Sources */,
+				22D6C7B21C028EF1007101E2 /* math.m in Sources */,
+				22D6C7AB1C028EF1007101E2 /* initing.swift in Sources */,
+				22D6C7A01C028EF1007101E2 /* io.swift in Sources */,
+				22D6C7A11C028EF1007101E2 /* machine_learning.swift in Sources */,
+				22D6C7A61C028EF1007101E2 /* m-matrix.swift in Sources */,
+				22D6C7B41C028EF1007101E2 /* opencv.mm in Sources */,
+				22D6C7B61C028EF1007101E2 /* operations-and-indexing.m in Sources */,
+				22D6C7A31C028EF1007101E2 /* m-helper-functions.swift in Sources */,
+				22D6C7A71C028EF1007101E2 /* m-operators.swift in Sources */,
+				22D6C7AA1C028EF1007101E2 /* helper-functions.swift in Sources */,
+				22D6C7A81C028EF1007101E2 /* m-simple-math.swift in Sources */,
+				22D6C7B01C028EF1007101E2 /* conversion.swift in Sources */,
+				22D6C7A51C028EF1007101E2 /* m-initing.swift in Sources */,
+				22D6C7A41C028EF1007101E2 /* m-image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,11 +437,16 @@
 		22B97D4B1C027EB60097FDD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Source/objc",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -317,17 +454,23 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tim-burgess.Swix";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		22B97D4C1C027EB60097FDD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Source/objc",
+				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -379,6 +522,7 @@
 				22B97D4C1C027EB60097FDD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22B97D4D1C027EB60097FDD6 /* Build configuration list for PBXNativeTarget "SwixTests" */ = {
 			isa = XCConfigurationList;
@@ -387,6 +531,7 @@
 				22B97D4F1C027EB60097FDD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
