@@ -9,7 +9,7 @@
 import Foundation
 import Accelerate
 
-struct matrix {
+public struct matrix {
     let n: Int
     var rows: Int
     var columns: Int

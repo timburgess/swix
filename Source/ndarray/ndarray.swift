@@ -13,7 +13,7 @@ import Accelerate
 
 // SLOW PARTS: x[ndarray, ndarray] set
 
-struct ndarray {
+public struct ndarray {
     let n: Int // the number of elements
     var count: Int // ditto
     var grid: [Double] // the raw values
@@ -22,7 +22,7 @@ struct ndarray {
         self.count = n
         grid = Array(count: n, repeatedValue: 0.0)
     }
-    func reshape(shape: (Int,Int)) -> matrix{
+    public func reshape(shape: (Int,Int)) -> matrix {
         // reshape to a matrix of size.
         var (mm, nn) = shape
         if mm == -1 {mm = n / nn}
@@ -32,37 +32,37 @@ struct ndarray {
         y.flat = self
         return y
     }
-    func copy() -> ndarray{
+    public func copy() -> ndarray{
         // return a new array just like this one
         let y = zeros(n)
         cblas_dcopy(self.n.cint, !self, 1.cint, !y, 1.cint)
         return y
     }
-    func sort(){
+    public func sort(){
         // sort this array *in place*
         vDSP_vsortD(!self, self.n.length, 1.cint)
     }
-    func indexIsValidForRow(index: Int) -> Bool {
+    public func indexIsValidForRow(index: Int) -> Bool {
         // making sure this index is valid
         return index >= 0 && index < n
     }
-    func min() -> Double{
+    public func min() -> Double{
         // return the minimum
         var m:CDouble=0
         vDSP_minvD(!self, 1.stride, &m, self.n.length)
         return Double(m)
     }
-    func max() -> Double{
+    public func max() -> Double{
         // return the maximum
         var m:CDouble=0
         vDSP_maxvD(!self, 1.stride, &m, self.n.length)
         return m
     }
-    func mean() -> Double{
+    public func mean() -> Double{
         // return the mean
         return sum(self) / n
     }
-    subscript(index:String)->ndarray{
+    public subscript(index:String)->ndarray{
         // assumed to be x["all"]. returns every element
         get {
             assert(index == "all", "Currently only \"all\" is supported")
@@ -73,7 +73,7 @@ struct ndarray {
             self[0..<n] = newValue
         }
     }
-    subscript(index: Int) -> Double {
+    public subscript(index: Int) -> Double {
         // x[0] -> Double. access a single element
         get {
             var newIndex:Int = index
@@ -88,7 +88,7 @@ struct ndarray {
             grid[newIndex] = newValue
         }
     }
-    subscript(r: Range<Int>) -> ndarray {
+    public subscript(r: Range<Int>) -> ndarray {
         // x[0..<N]. Access a range of values.
         get {
             // assumes that r is not [0, 1, 2, 3...] not [0, 2, 4...]
@@ -97,7 +97,7 @@ struct ndarray {
         set {
             self[asarray(r)].grid = newValue.grid}
     }
-    subscript(i: ndarray) -> ndarray {
+    public subscript(i: ndarray) -> ndarray {
         // x[arange(2)]. access a range of values; x[0..<2] depends on this.
         get {
             // ndarray has fractional parts, and those parts get truncated
